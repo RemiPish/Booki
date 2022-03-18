@@ -1,0 +1,68 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin-left:50px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo-booki {
+  width: 94px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+header > .link-header{
+    gap: 50px;
+}
+.link-header a {
+  text-decoration: none;
+  border-top: 3px solid transparent;
+  
+}
+
+.link-header a:hover {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+  
+}
+.title {
+  color: black;
+  font-weight: bold;
+  font-size:22px;
+}
+#search-input {
+  color: black;
+  font-weight: bolder;
+}
+i {
+  color: #0065fc;
+}
+.marker {
+  color: black;
+}
+.marker-container {
+  background-color: #f2f2f2;
+}
+#button-search {
+  color: white;
+  background-color: #0065fc;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 10px;
+}
+.box-container {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+footer {
+  background-color: #f2f2f2;
+}
+
+#filter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}

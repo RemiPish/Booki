@@ -11,34 +11,41 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet"type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <img src="assets/images/logo/Booki.png" alt="Booki logo" />
-      <nav>
-        <a href="#hebergement">Hébergement</a>
-        <a href="#activites">Activités</a>
+      <img id="logo-booki" src="assets/images/logo/Booki@3x.png" alt="Booki logo" />
+      <nav class="link-header">
+        <a id="link-hebergement" href="#hebergement">Hébergements</a>
+        <a id="link-activites" href="#activites">Activités</a>
       </nav>
     </header>
     <main>
       <div>
-        <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+        <p class="title">Trouvez votre hébergement pour des vacances de rêve</p>
         <p>En plein centre ville ou en pleine nature</p>
-        <input name="name" type="text" />
-        <button>Rechercher</button>
-        <div>
+        <span class="marker-container">
+          <i class="fas fa-map-marker-alt marker"></i>
+        </span>
+       
+        <input id="search-input" name="name" type="text" placeholder="Marseille, France"/>
+        <button id="button-search">Rechercher</button>
+        <div id="filter">
           Filtre
           <button>Économique</button>
           <button>Familial</button>
           <button>Romantique</button>
           <button>Animaux autorisés</button>
         </div>
-        <p>Plus de 500 logements sont disponible dans cette ville</p>
+        <i class="fa fa-info-circle"></i>
+        <label>Plus de 500 logements sont disponible dans cette ville</label>
       </div>
-      <article id="hebergement">
-        <h3>Hébergement à Marseille</h3>
+      <article class="box-container">
+        <h2 class="title">Hébergement à Marseille</h2>
 
         <a>
           <figure>
@@ -162,8 +169,8 @@
 
         <p>Afficher plus</p>
       </article>
-      <aside>
-        <h3>Les plus populaires</h3>
+      <aside class="box-container">
+        <h2 class="title">Les plus populaires</h2>
 
         <a>
           <figure>
