@@ -7,44 +7,74 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet"type="text/css" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <img id="logo-booki" src="assets/images/logo/Booki@3x.png" alt="Booki logo" />
+      <img
+        id="logo-booki"
+        src="assets/images/logo/Booki.png"
+        alt="Booki logo"
+      />
       <nav class="link-header">
         <a id="link-hebergement" href="#hebergement">Hébergements</a>
         <a id="link-activites" href="#activites">Activités</a>
       </nav>
     </header>
     <main>
-      <div>
+      <section>
         <p class="title">Trouvez votre hébergement pour des vacances de rêve</p>
         <p>En plein centre ville ou en pleine nature</p>
-        <span class="marker-container">
-          <i class="fas fa-map-marker-alt marker"></i>
-        </span>
-       
-        <input id="search-input" name="name" type="text" placeholder="Marseille, France"/>
-        <button id="button-search">Rechercher</button>
+        <form class="search-input" action="">
+          <span class="marker-container">
+            <i class="fas fa-map-marker-alt marker"></i>
+          </span>
+          <input id="search-input-text" name="nom" type="text" />
+          <input type="submit" id="button-search" value="Rechercher" />
+        </form>
+
         <div id="filter">
-          Filtre
-          <button>Économique</button>
-          <button>Familial</button>
-          <button>Romantique</button>
-          <button>Animaux autorisés</button>
+          <label id="filter-title">Filtres</label>
+          <button class="filter-button">
+            <span class="filter-fa-icon">
+              <i class="fas fa-money-bill-wave fa-icon"></i>
+            </span>
+
+            <label class="filter-label">Économique</label>
+          </button>
+          <button class="filter-button">
+            <span class="filter-fa-icon">
+              <i class="fas fa-child fa-icon"></i>
+            </span>
+            <label class="filter-label">Familial</label>
+          </button>
+          <button class="filter-button">
+            <span class="filter-fa-icon">
+              <i class="fas fa-heart fa-icon"></i>
+            </span>
+            <label class="filter-label">Romantique</label>
+          </button>
+          <button class="filter-button">
+            <span class="filter-fa-icon">
+              <i class="fas fa-dog fa-icon"></i>
+            </span>
+            <label class="filter-label">Animaux autorisés</label>
+          </button>
         </div>
         <i class="fa fa-info-circle"></i>
-        <label>Plus de 500 logements sont disponible dans cette ville</label>
-      </div>
-      <article class="box-container">
+        <label>Plus de 500 logements sont disponibles dans cette ville</label>
+      </section>
+      <section class="box-container">
         <h2 class="title">Hébergement à Marseille</h2>
 
         <a>
@@ -168,7 +198,7 @@
         </a>
 
         <p>Afficher plus</p>
-      </article>
+      </section>
       <aside class="box-container">
         <h2 class="title">Les plus populaires</h2>
 
@@ -232,7 +262,7 @@
           </figure>
         </a>
       </aside>
-      <article id="activites">
+      <section id="activites">
         <h3>Activités à Marseille</h3>
 
         <a>
@@ -306,24 +336,38 @@
             </figcaption>
           </figure>
         </a>
-      </article>
+      </section>
     </main>
     <footer>
       <div>
-        <div>A propos</div>
-        <a>Fonctionnement du site</a>
-        <a>Conditions générales de vente</a>
-        <a>Données et confidentialité</a>
+        <div class="footer-title">A propos</div>
+        <div>
+          <a>Fonctionnement du site</a>
+        </div>
+        <div>
+          <a>Conditions générales de vente</a>
+        </div>
+        <div>
+          <a>Données et confidentialité</a>
+        </div>
       </div>
       <div>
-        <div>Nos hébergements</div>
-        <a>Charte qualité</a>
-        <a>Soumettre votre hôtel</a>
+        <div class="footer-title">Nos hébergements</div>
+        <div>
+          <a>Charte qualité</a>
+        </div>
+        <div>
+          <a>Soumettre votre hôtel</a>
+        </div>
       </div>
       <div>
-        <div>Assistance</div>
-        <a>Centre d'aide</a>
-        <a>Nous contacter</a>
+        <div class="footer-title">Assistance</div>
+        <div>
+          <a>Centre d'aide</a>
+        </div>
+        <div>
+          <a>Nous contacter</a>
+        </div>
       </div>
     </footer>
   </body>
