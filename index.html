@@ -27,20 +27,26 @@
         alt="Booki logo"
       />
       <nav class="link-header">
-        <a id="link-hebergement" href="#hebergement">Hébergements</a>
-        <a id="link-activites" href="#activites">Activités</a>
+        <a class="link-text" href="#hebergement">Hébergements</a>
+        <a class="link-text" href="#activites">Activités</a>
       </nav>
     </header>
     <main>
       <section>
         <p class="title">Trouvez votre hébergement pour des vacances de rêve</p>
         <p>En plein centre ville ou en pleine nature</p>
-        <form class="search-input" action="">
-          <span class="marker-container">
-            <i class="fas fa-map-marker-alt marker"></i>
-          </span>
-          <input id="search-input-text" name="nom" type="text" />
-          <input type="submit" id="button-search" value="Rechercher" />
+        <form action="">
+          <div class="search-input"> 
+            <span class="marker-container">
+              <i class="fas fa-map-marker-alt marker"></i>
+            </span>
+            <input id="search-input-text" name="nom" type="text" />
+            <button type="submit" id="button-search">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <label class="search-text">Rechercher</label>
+              </button>
+          </div>
+          
         </form>
 
         <div id="filter">
@@ -71,8 +77,11 @@
             <label class="filter-label">Animaux autorisés</label>
           </button>
         </div>
-        <i class="fa fa-info-circle"></i>
-        <label>Plus de 500 logements sont disponibles dans cette ville</label>
+        <div id="recherche-info">
+          <i class="fa fa-info-circle"></i>
+          <label >Plus de 500 logements sont disponibles dans cette ville</label>
+        </div>
+        
       </section>
       <section class="box-container">
         <h2 class="title">Hébergement à Marseille</h2>
@@ -342,31 +351,31 @@
       <div>
         <div class="footer-title">A propos</div>
         <div>
-          <a>Fonctionnement du site</a>
+          <a href="#">Fonctionnement du site</a>
         </div>
         <div>
-          <a>Conditions générales de vente</a>
+          <a href="#">Conditions générales de vente</a>
         </div>
         <div>
-          <a>Données et confidentialité</a>
+          <a href="#">Données et confidentialité</a>
         </div>
       </div>
       <div>
         <div class="footer-title">Nos hébergements</div>
         <div>
-          <a>Charte qualité</a>
+          <a href="#">Charte qualité</a>
         </div>
         <div>
-          <a>Soumettre votre hôtel</a>
+          <a href="#">Soumettre votre hôtel</a>
         </div>
       </div>
       <div>
         <div class="footer-title">Assistance</div>
         <div>
-          <a>Centre d'aide</a>
+          <a href="#">Centre d'aide</a>
         </div>
         <div>
-          <a>Nous contacter</a>
+          <a href="#">Nous contacter</a>
         </div>
       </div>
     </footer>
