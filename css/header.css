@@ -64,3 +64,32 @@ header {
     font-size: 18px;
     font-weight: bold;
   }
+
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    .link-header {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .link-header a {
+      flex: 1;
+      text-align: center;
+      width: 50%;
+      border-bottom: 3px solid transparent;
+      border-top: none;
+      padding-top: 0;
+      padding-bottom: 12px;
+    }
+    .link-header a:hover {
+      border-top: none;
+      border-bottom: 2px solid #0065fc;
+    }
+    .link-text {
+      font-size: 18px;
+    }
+   
+  }

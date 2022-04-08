@@ -1,22 +1,32 @@
 .title-hebergement
 {
   margin-left: 40px;
-  flex: 0 0 100%
+  flex: 0 0 100%;
+  font-weight: bold;
+  font-size:20px;
 }
 .container-hebergement{
-    width : 63%;
+    width : 65%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
   .box-hebergement{
     display:flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-bottom: 30px;
     margin-right: 20px;
   }
   .card {
-    width: 28%;
-    height: 32%;
+    flex: 1 1 165px;
+    max-width: 200px;
+    min-width: 165px;
+    /*width: 200px;*/
+    height: 150px;
     margin-left:2%;
     margin-right: 2%;
     border-radius: 25px;
@@ -24,8 +34,8 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   .card-image {
-    width:98%;
-    height: 10vw;
+    width:99%;
+    height: 85px;
     position: relative;
     overflow: hidden;
     margin-top:0.1em;
@@ -35,7 +45,7 @@
   }
 
   .card-image img {
-    width: 140%;
+    width: 100%;
     height: auto;
     position: absolute;
     top: 50%;
@@ -46,5 +56,44 @@
   .card-body {
     padding: 5px 10px;
     box-sizing: border-box;
-    font-size: 1vw;
+    line-height: 10px;
+    font-size:12px;
+  }
+
+  .afficher-plus{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  @media screen and (max-width: 768px) {
+
+    .container-hebergement{
+        order: 2;  
+        background-color: white;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .title-hebergement
+    {
+      font-size:30px;
+    }
+    .box-hebergement{
+      flex-direction: column;
+    }
+    
+    .card {
+      flex: 0 0 auto;
+      max-width: 700px;
+      min-width: 400px;
+      height: 250px;
+    }
+    .card-image {
+      height: 180px;
+    }
+    .card-body {
+      font-size:15px;
+    }
+
+
   }
