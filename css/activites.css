@@ -1,0 +1,51 @@
+.container-activites {
+    width: 100%;
+    
+}
+.box-activites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    height: 450px;
+}
+.card-activites {
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-left: 0;
+}
+
+.card-image-long {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+.card-image-long img {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.card-body-activites {
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.card-image-short {
+    height: 125px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-image-short img {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
