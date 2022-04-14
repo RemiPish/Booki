@@ -25,45 +25,6 @@ header {
     color: #0065fc;
   }
 
-  #filter {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 30px;
-  }
-  
-  .filter-button {
-    display: flex;
-    justify-content: flex-start;
-    background-color: white;
-    border: 2px solid #d9d9d9;
-    border-radius: 30px;
-    height: 50px;
-    padding-right: 20px;
-    font-size: 18px;
-    font-weight: bolder;
-  }
-  
-  .filter-fa-icon {
-    display: inline-flex;
-    border-radius: 50%;
-    background-color: #deebff;
-    width: 50px;
-    height: 50px;
-    transform: translate(-10px, -3px);
-  }
-  
-  .filter-label {
-    margin: auto;
-    font-weight: bold;
-  }
-  #filter-title {
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 18px;
-    font-weight: bold;
-  }
 
   @media screen and (max-width: 768px) {
     header {

@@ -8,7 +8,7 @@
 }
 .search-input > * {
     padding: 14px 18px;
-    margin: 10px 0;
+    margin-bottom: 40px;
 }
 #search-input-text {
     color: black;
@@ -53,6 +53,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .filter-button {
