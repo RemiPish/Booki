@@ -29,7 +29,7 @@
     </nav>
   </header>
   <main>
-    <section>
+    <section id="search-container">
       <div class="title">
         Trouvez votre hébergement pour des vacances de rêve
       </div>
@@ -75,7 +75,7 @@
           <label class="filter-label">Animaux autorisés</label>
         </button>
       </div>
-      <div id="recherche-info">
+      <div id="recherche-info-text">
         <i class="fa fa-info-circle"></i>
         <label>Plus de 500 logements sont disponibles dans cette ville</label>
       </div>
@@ -87,7 +87,13 @@
           <figure class="card">
             <a href="">
               <div class="card-image">
-                <img src="assets/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                <img 
+                srcset="assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 589w,
+                assets/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 766w,
+                assets/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                   alt="AubergeLaCannebiere" />
               </div>
               <div class="card-body">
@@ -106,10 +112,12 @@
           <figure class="card">
             <a href="">
               <div class="card-image">
-                <source media="(max-width: 390px)" srcset="assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                <img src="assets/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="HotelDuPort" />
+                <img srcset="assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg 589w,
+                assets/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 766w,
+                assets/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                  src="assets/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="HotelDuPort" />
               </div>
               <div class="card-body">
                 <div class="card-title">Hôtel du port</div>
@@ -128,10 +136,12 @@
           <figure class="card">
             <a href="">
               <div class="card-image">
-                <source media="(max-width: 390px)" srcset="assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-                <img src="assets/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                <img srcset="assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 589w,
+                assets/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 766w,
+                assets/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                 src="assets/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                   alt="HotelLesMouettes" />
               </div>
               <div class="card-body">
@@ -151,10 +161,13 @@
           <figure class="card">
             <a href="">
               <div class="card-image">
-                <source media="(max-width: 390px)" srcset="assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                <img src="assets/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                <img 
+                srcset="assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 589w,
+                assets/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 766w,
+                assets/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                   alt="HotelDeLaMer" />
               </div>
               <div class="card-body">
@@ -174,10 +187,13 @@
           <figure class="card">
             <a href="">
               <div class="card-image">
-                <source media="(max-width: 390px)" srcset="assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                <img src="assets/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                <img 
+                srcset="assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 589w,
+                assets/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 766w,
+                assets/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                   alt="AubergeLePanier" />
               </div>
               <div class="card-body">
@@ -197,10 +213,13 @@
           <figure class="card">
             <a href="">
               <div class="card-image">
-                <source media="(max-width: 390px)" srcset="assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-                <img src="assets/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                <img 
+                srcset="assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 589w,
+                assets/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 766w,
+                assets/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                   alt="HotelChezAmina" />
               </div>
               <div class="card-body">
@@ -231,10 +250,14 @@
           <figure class="card-populaire">
             <a href="">
               <div class="card-image-populaire">
-                <source media="(max-width: 390px)" srcset="assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-                <img src="assets/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+
+                <img 
+                srcset="assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 589w,
+                assets/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 766w,
+                assets/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                   alt="HotelLeSoleilDuMatin" />
               </div>
               <div class="card-body-populaire">
@@ -254,10 +277,12 @@
           <figure class="card-populaire">
             <a href="">
               <div class="card-image-populaire">
-                <source media="(max-width: 390px)" srcset="assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                <img src="assets/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                <img  srcset="assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 589w,
+                assets/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 766w,
+                assets/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
                   alt="AuCouerDeLeauChambresDhotes" />
               </div>
               <div class="card-body-populaire">
@@ -277,10 +302,13 @@
           <figure class="card-populaire">
             <a href="">
               <div class="card-image-populaire">
-                <source media="(max-width: 390px)" srcset="assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                <img src="assets/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                <img 
+                srcset="assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 589w,
+                assets/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 766w,
+                assets/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                   alt="HotelToutBlueEtBlanc" />
               </div>
               <div class="card-body-populaire">
@@ -302,15 +330,18 @@
     <section id="activites">
 
       <div class="container-activites">
-        <div class="title">Activités à Marseille</div>
+        <div class="title title-activites">Activités à Marseille</div>
         <div class="box-activites">
           <figure class="card-activites">
             <a href="">
-              <div class="card-image-long">
-                <source media="(max-width: 390px)" srcset="assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                <img src="assets/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="VieuxPort" />
+              <div class="card-image-long">   
+                <img 
+                srcset="assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 589w,
+                assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 766w,
+                assets/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="VieuxPort" />
               </div>
 
               <div class="card-body-activites">
@@ -322,10 +353,13 @@
           <figure class="card-activites">
             <a href="">
               <div class="card-image-pomegues">
-                <source media="(max-width: 390px)" srcset="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                <img src="assets/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="FortDePomegues" />
+                <img 
+                srcset="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg 589w,
+                assets/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 766w,
+                assets/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="FortDePomegues" />
               </div>
               <div class="card-body-activites">
                 <div>Fort de Pomègues</div>
@@ -336,10 +370,13 @@
           <figure class="card-activites">
             <a href="">
               <div class="card-image-frioul">
-                <source media="(max-width: 390px)" srcset="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                <img src="assets/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="IlesDuFrioul" />
+                <img 
+                srcset="assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 589w,
+                assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 766w,
+                assets/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="IlesDuFrioul" />
               </div>
               <div class="card-body-activites">
                 <div>Îles du Frioul</div>
@@ -350,10 +387,13 @@
           <figure class="card-activites">
             <a href="">
               <div class="card-image-long">
-                <source media="(max-width: 390px)" srcset="assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                <img src="assets/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                <img 
+                srcset="assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 589w,
+                assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 766w,
+                assets/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                   alt="ParcNationalDesCalanques" />
               </div>
               <div class="card-body-activites">
@@ -365,10 +405,13 @@
           <figure class="card-activites">
             <a href="">
               <div class="card-image-short">
-                <source media="(max-width: 390px)" srcset="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                <img src="assets/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                <img 
+                srcset="assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg 589w,
+                assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 766w,
+                assets/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                   alt="Notre-Dame-de-la-Garde" />
               </div>
               <div class="card-body-activites">
@@ -380,10 +423,12 @@
           <figure class="card-activites">
             <a href="">
               <div class="card-image-short">
-                <source media="(max-width: 390px)" srcset="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                <source media="(max-width: 768px)" srcset="assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                <source media="(min-width: 992px)" srcset="assets/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                <img src="assets/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" />
+                <img  srcset="assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg 589w,
+                assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 766w,
+                assets/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 2356w" 
+                sizes=" (max-width: 768px )589px
+                (max-width: 992px) 766px, 2356px"
+                src="assets/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" />
               </div>
               <div class="card-body-activites">
                 <div>Parc Longchamp</div>

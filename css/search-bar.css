@@ -100,7 +100,7 @@
     font-weight: bold;
 }
 
-#recherche-info {
+#recherche-info-text {
     display: flex;
     justify-content: flex-start;
 }
@@ -122,12 +122,16 @@
   }
   
 @media screen and (max-width: 768px) {
+    #search-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     #search-input-text {
         flex: 2 1 auto;
+        width: 80%;
     }
     .search-input {
         flex-wrap: nowrap;
-        width: 80%;
     }
 
     .search-icon {
