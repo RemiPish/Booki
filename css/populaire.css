@@ -1,126 +1,136 @@
 .title-populaire {
-    margin-left: 20px;
-    flex: 0 0 70%;
-    font-weight: bold;
-    font-size:20px;
+  all: initial;
+  font-family: "Raleway", sans-serif;
+  flex: 0 0 90%;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .fa-line-chart {
-    font-weight: bolder;
-    color: black;
+  font-weight: bolder;
+  color: black;
 }
 
 .header-populaire {
-    display: flex;
-    width: 100%;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-content: space-around;
 }
 
-.container-populaire{
-    width: 34%;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    margin-bottom: 40px;
+.container-populaire {
+  width: 34%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
 }
-  .box-populaire{
-    display:flex;
-    flex-direction: column;
-  }
+
+.box-populaire {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-populaire {
+  max-width: 350px;
+  min-width: 250px;
+  height: 120px;
+  border-radius: 25px;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-image-populaire {
+  height: 117px;
+  width: 120px;
+  position: relative;
+  overflow: hidden;
+  margin: 0.1em;
+
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  float: left;
+}
+
+.card-image-populaire img {
+  object-fit: contain;
+  width: 295px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-body-populaire {
+  margin-top: 20px;
+  margin-left: 130px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  line-height: 120%;
+  font-size: 0.75rem;
+}
+
+.star-populaire {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
 
   .card-populaire {
-    max-width: 350px;
-    min-width: 250px;
-    height: 120px;
-    border-radius: 25px;
-    background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  .card-image-populaire {
-    height: 117px;
-    width: 120px;
-    position: relative;
-    overflow: hidden;
-    margin:0.1em;
-
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    float:left;
-  }
-
-  .card-image-populaire img {
-    object-fit: contain;
-    width: 250px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+    max-width: 320px;
+    min-width: 180px;
   }
 
   .card-body-populaire {
-    margin-top: 20px;
-    margin-left: 130px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    line-height: 15px;
-    font-size:0.75rem;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 12px;
   }
 
-  .star-populaire{
-      margin-top: 20px;
+  .card-image-populaire {
+    width: 100px;
+
   }
-
-  @media screen and (max-width: 992px) {
-
-    .card-populaire {
-        max-width: 320px;
-        min-width: 180px;
-    }
-
-    .card-body-populaire{
-      margin-top: 5px;
-      margin-left: 5px;
-      line-height: 10px;
-    }
-    .card-image-populaire {
-        width: 100px;
-
-      }
 }
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-    .container-populaire {
-        order: 1;  
-        width: 100%;
-        border-radius: 0;
-    }
-
-    .title-populaire {
-        font-size:30px;
-        margin-left: 20px;
-    }
-
-    .card-populaire 
-    {   max-width: 700px;
-        min-width: 254px;
-        height: 150px;
-    }
-
-    .card-body-populaire {
-        font-size:3vw;
-        line-height: 20px;
-        margin-top: 20px;
-        margin-left: 220px;
-      }
-      .card-image-populaire {
-        width : 200px;
-        height: 145px;
-      }
-      .star-populaire{
-        margin-top: 10px;
-    }
-
+  .container-populaire {
+    order: 1;
+    width: 100%;
+    border-radius: 0;
   }
+
+  .title-populaire {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card-populaire {
+    max-width: 728px;
+    min-width: 254px;
+    height: 200px;
+  }
+
+  .card-body-populaire {
+    font-size: 3vw;
+    line-height: 120%;
+    margin-top: 20px;
+    margin-left: 220px;
+  }
+
+  .card-image-populaire {
+    width: 200px;
+    height: 197px;
+  }
+
+  .star-populaire {
+    margin-top: 10px;
+  }
+
+}

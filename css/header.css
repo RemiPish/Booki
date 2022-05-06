@@ -1,56 +1,60 @@
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-booki {
+  width: 100px;
+  margin-top: 41px;
+  margin-bottom: 32px;
+  margin-left: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.link-header a {
+  border-top: 3px solid transparent;
+  padding: 47px;
+}
+
+.link-header a:hover {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .link-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #logo-booki {
-    width: 100px;
-    margin-top: 41px;
-    margin-bottom: 32px;
-    margin-left: 40px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .link-header a {
-    border-top: 3px solid transparent;
-    padding: 47px;
+    flex: 1;
+    text-align: center;
+    width: 50%;
+    border-bottom: 3px solid transparent;
+    border-top: none;
+    padding: 0;
   }
-  
+
   .link-header a:hover {
-    border-top: 2px solid #0065fc;
-    color: #0065fc;
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
   }
 
-
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-  
-    .link-header {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-    .link-header a {
-      flex: 1;
-      text-align: center;
-      width: 50%;
-      border-bottom: 3px solid transparent;
-      border-top: none;
-      padding-top: 0;
-      padding-bottom: 12px;
-    }
-    .link-header a:hover {
-      border-top: none;
-      border-bottom: 2px solid #0065fc;
-    }
-    .link-text {
-      font-size: 18px;
-    }
-   
+  .link-text {
+    font-size: 18px;
   }
+
+}
