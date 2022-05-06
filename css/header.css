@@ -45,7 +45,8 @@ a {
     width: 50%;
     border-bottom: 3px solid transparent;
     border-top: none;
-    padding: 0;
+    padding:0;
+    padding-bottom: 20px;
   }
 
   .link-header a:hover {
