@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.search-input>* {
+.search-input > * {
     padding: 14px 18px;
     margin-bottom: 40px;
 }
